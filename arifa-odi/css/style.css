@@ -312,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
 .qbootstrap-cover,
 .qbootstrap-hero {
   position: relative;
-  height: 800px;
+  height: 800px !important;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -693,7 +693,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-countdown .countdown {
   margin-bottom: 0;
-  font-size: 80px;
+  font-size: 35px;
   color: #859042;
 }
 #qbootstrap-countdown .countdown span {

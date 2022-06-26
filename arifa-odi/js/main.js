@@ -303,6 +303,14 @@
 	}
 
 	$('#btnBukaUndangan').click(function(){
+		// $('#modalsProtokol').modal('show');
+		$('html, body').animate({
+			scrollTop: $('[data-section="home"]').offset().top
+		}, 500);
+	});
+	
+	$('.btnBukaUndangan').click(function(){
+		// $('#modalsProtokol').modal('show');
 		$('html, body').animate({
 			scrollTop: $('[data-section="home"]').offset().top
 		}, 500);
@@ -324,5 +332,5 @@
 		
 	});
 
-
+	$('#modalsProtokol').modal('show');
 }());
