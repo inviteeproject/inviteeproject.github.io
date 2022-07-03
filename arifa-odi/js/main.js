@@ -274,10 +274,10 @@
 		// + minutes + "Minutes " + seconds + "Seconds ";
 
 		// Display the result in an element with id="demo"
-		document.getElementById("days").innerHTML = days +" <small>days</small>";
-		document.getElementById("hours").innerHTML = hours + " <small>hours</small> ";
-		document.getElementById("minutes").innerHTML = minutes + " <small>minutes</small> ";
-		document.getElementById("seconds").innerHTML = seconds + " <small>seconds</small> ";
+		document.getElementById("days").innerHTML = days +" <small>Hari&nbsp;</small>";
+		document.getElementById("hours").innerHTML = hours + " <small>&nbsp;Jam&nbsp;</small> ";
+		document.getElementById("minutes").innerHTML = minutes + " <small>Menit</small> ";
+		document.getElementById("seconds").innerHTML = seconds + " <small>Detik</small> ";
 
 		// If the count down is finished, write some text 
 		if (distance < 0) {
@@ -302,12 +302,7 @@
 		$('#toUser').html('Tamu Kami');
 	}
 
-	$('#btnBukaUndangan').click(function(){
-		// $('#modalsProtokol').modal('show');
-		$('html, body').animate({
-			scrollTop: $('[data-section="home"]').offset().top
-		}, 500);
-	});
+	
 	
 	$('.btnBukaUndangan').click(function(){
 		// $('#modalsProtokol').modal('show');

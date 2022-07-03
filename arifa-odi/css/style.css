@@ -384,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 49%;
   width: 100px;
   height: 2px;
-  background: #fff;
+  background: #614515;
   content: '';
 }
 .qbootstrap-cover .display-tc .holder span:before,
@@ -692,12 +692,13 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.4);
 }
 #qbootstrap-countdown .countdown {
+  text-align: center;
   margin-bottom: 0;
   font-size: 60px;
   color: #859042;
 }
 #qbootstrap-countdown .countdown span {
-  margin: 0 30px;
+  /* margin: 0 30px; */
   display: inline-block;
   font-family: "Pattaya", cursive;
 }

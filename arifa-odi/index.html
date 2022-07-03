@@ -56,6 +56,38 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 		<style>
+
+.cust_count{
+	border: 2px solid #9ea282;
+	padding: 20px;
+	font-size: 30px;
+	background: #eeefe2;
+	border-radius: 10px !important;
+	margin: 5px;
+	color:#614515 !important;
+}					
+.containerJdl {
+  display: flex;
+  justify-content: center; /* center the child */
+}
+			.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
 			.autocut{
 				-moz-hyphens:auto;
 				-ms-hyphens:auto;
@@ -360,6 +392,32 @@
 	  </div>
 	</header>
 	
+	<div id="audio-container" style="position: fixed; 
+	top: 0px;
+    left: 0;
+	z-index: 4000;" class="audio-box">			
+		<p style="color: #f0f8ff00;">sond</p>
+		<!-- <div class="" id="unmute_sound" style="">
+			<div class="">
+			<i aria-hidden="true" class="fas fa-music"></i></div>
+		</div>  -->
+
+		<div id="unmute_sound" style="display: none;" class="btn btn-default btn-block">	
+			<i class="icon-volume-2"></i><br/>
+			<!-- <span class="nav__name">PLAY</span> -->
+		</div>
+		<div id="mute_sound" style="" class="btn btn-default btn-block">
+			<i class="icon-volume-off"></i><br/>
+			<!-- <span class="nav__name">MUTE</span> -->
+		</div>
+
+		<!-- <div class="" id="mute_sound" style="">
+			<div class="">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.36 70.52"><title>1Mute music</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path d="M74.12,58.49,70,55V4.49A4.49,4.49,0,0,0,64.22.2L21.07,13.5,13.48,7.06A3.5,3.5,0,1,0,9,12.4l8.21,7v34.4a15.67,15.67,0,0,0-8-.32c-.94.22-8,1.87-9,6.91A7.85,7.85,0,0,0,1.41,66c3.21,4.9,10.52,4.59,12.53,4.5s8-.35,11.25-4.82a10.18,10.18,0,0,0,1.61-3.38q-.15-15.76-.31-31.53a1.22,1.22,0,0,1,.89-1.19l1.34-.39L48.56,46a7.46,7.46,0,0,0-4.08,4.08c-1.08,2.94.15,6.32,1.93,8.35A10.55,10.55,0,0,0,52,61.48a16.35,16.35,0,0,0,12.06-1c.33-.17.65-.35,1-.54l4.55,3.86a3.5,3.5,0,1,0,4.53-5.34ZM60.87,44.92a18.14,18.14,0,0,0-3.34-.5L36.79,26.83,59.3,20.31a1.22,1.22,0,0,1,1.57,1.18Z"></path></g></g></svg>				</div>
+		</div> -->
+		
+	</div>
+
 	<div class="qbootstrap-hero" data-section="greetings">
 		<!-- <div class="qbootstrap-overlay"></div> -->
 		<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/background-aa.jpg);">
@@ -375,9 +433,10 @@
 								<h2 id="toUser"></h2>
 								
 								<div class="col-md-4 ">
-
+									
 								</div>
 								<div class="col-md-4 ">
+									Kami mengundang anda untuk hadir di acara pernikahan kami
 									<div id="btnBukaUndangan" class="btn btn-default btn-block" >Buka Undangan</div>
 								</div>
 								<div class="col-md-4 ">
@@ -400,10 +459,19 @@
 						<div class="col-md-10 col-md-offset-1">
 							<div class="animate-box svg-sm colored">
 								<!-- <img src="images/flaticon/svg/004-nature.svg" class="svg" alt="wedding digital invitation by  Invitee-project"> -->
-								<h1 class="holder"><span>The Wedding of</span></h1>
+								<h1 class="holder" style="color:#614515 !important;"><span>The Wedding of</span></h1>
 								<h2>Odilio &amp; Arifa</h2>
-								<p>15.07.2022</p>
-
+								<!-- <p><div style="font-family: 'Pattaya', cursive;">15.07.2022</div></p> -->
+								<div class="containerJdl">
+									<h1 style="
+									display: flex;
+									/* margin: 0 auto; or use auto left/right margin instead of justify-content center */
+									font-size: 25px;background-color:#614515;color:#ffffff;
+									border: 1px solid #614515;
+									padding: 10px;
+									border-radius: 5px;
+									">15.07.2022</h1>
+								</div>
 								
 							</div>
 						</div>
@@ -420,7 +488,11 @@
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-12 text-center section-heading svg-sm-2 colored">
 						
-						<h2>بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ,</h2>
+						<h2 style="font-size: 30px;">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h2>
+						<p style="
+						font-family: 'Pattaya';
+						color: #614515;
+						">Assalamualaikum Wr.Wb</p>
 						<p>Dengan memohon rahmat dan ridho Alloh SWT kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada pernikahan putra putri kami:​</p>
 						<p><strong>15 Juli 2022 &mdash; Ungaran, Jawa Tengah</strong></p>
 					</div>
@@ -431,14 +503,16 @@
 					<div class="couple groom text-center animate-box">
 						<img src="images/groom.jpg" class="img-responsive" alt="wedding digital invitation by  Invitee-project">
 						<div class="desc">
-							<h2><div class="namaPria"></div></h2>
+							<h2 style="
+							font-size: 27px;
+						"><div class="namaPria"></div></h2>
 							<p><div class="isianDescPria"></div></p>
 							
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="couple bride text-center animate-box">
+					<div class="couple groom text-center animate-box">
 						<img src="images/bride.jpg" class="img-responsive" alt="wedding digital invitation by  Invitee-project">
 						<div class="desc">
 							<h2><div class="namaWanita"></div></h2>
@@ -452,26 +526,71 @@
 	</div>
 
 
-		<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(images/background-aa.jpg);" data-section="wedding-day">
-		<div class="overlay"></div>
+		<div id="qbootstrap-countdown" style="background-image: url(images/background-aa.jpg);" data-section="wedding-day">
+		<!-- <div class="overlay"></div> -->
 		<div class="display-over">
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-12 section-heading text-center svg-sm colored">
 						
-						<h2 class="" style="color: #fff !important;">The Wedding Day</h2>
-						<span class="datewed" style="color: #fff;">Jumat,15 Juli 2022</span>
+						
+						<h4 class="nav__name" style="margin-top: 90px;color:#614515 !important;">The Wedding Day</h4>
+						<h2 class="" style="">Jumat,15 Juli 2022</h2>
+						
 					</div>
 				</div>
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<p class="countdown">
-							<span id="days" style="color: #fff;"></span>
-							<span id="hours" style="color: #fff;"></span>
-							<span id="minutes"style="color: #fff;"></span>
-							<span id="seconds"style="color: #fff;"></span>
-						</p>
+						
+						<center>
+						<table>
+							<tr>
+								<td  class="">
+									<p class="countdown cust_count">
+										<span id="days"></span>
+										
+									</p>
+									
+								</td>
+								<td class="">
+									<p class="countdown cust_count">
+										<span id="hours"></span>
+										
+									</p>
+								</td>
+								
+							</tr>
+							<tr>
+								<td class="">
+									<p class="countdown cust_count">
+										<span id="minutes" ></span>
+										
+									</p>
+									
+								</td>
+								<td class="">
+									<p class="countdown cust_count">
+										<span id="seconds" ></span>
+										
+									</p>
+								</td>
+							</tr>
+
+							
+						</table>
+						</center>
 					</div>
+				</div>
+				
+				<div class="row animate-box">
+					<!-- <div class="col-md-8 col-md-offset-2 text-center">
+						<p class="countdown">
+							<span id="days" ></span>
+							<span id="hours" ></span>
+							<span id="minutes"></span>
+							<span id="seconds"></span>
+						</p>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -566,6 +685,7 @@
 					
 					<center>
 						<h3>Scan Lokasi</h3><img src="images/wew.png">
+						<a href="https://www.google.com/maps/dir/-6.9640721,110.4784123/Bergas,+Setiggen,+Wujil,+Bergas,+Semarang+Regency,+Central+Java+50552/@-7.061979,110.3722877,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e708664c3e7bed5:0x5ae1e619f04769c0!2m2!1d110.4130851!2d-7.1724325?hl=en" class="btn btn-default btn-block">Klik Ke Lokasi</a>
 					</center>
 				</div>
 			</div>
@@ -576,23 +696,6 @@
 
 
 	
-		<div id="qbootstrap-couple" class="qbootstrap-section-gray" data-section="dengan-rahmat1">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 animate-box">
-					<div class="col-md-12 text-center section-heading svg-sm colored">
-						<h3>وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ</h3>
-						<p>Dan di antara tanda-tanda kekuasaan-Nya lah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.​</p>
-						<p><strong>QS. Ar-Ruum 30 : 21</strong></p>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
-	
-
 	<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(images/background-aaa.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
@@ -661,6 +764,22 @@
 		</div>
 	</div>
 
+
+	<div id="qbootstrap-couple" class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5"  data-section="dengan-rahmat1">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 animate-box">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<h3>وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ</h3>
+						<p>Dan di antara tanda-tanda kekuasaan-Nya lah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.​</p>
+						<p><strong>QS. Ar-Ruum 30 : 21</strong></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
 	
 	
 	
@@ -672,17 +791,21 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 
-				<div class="modal-header">
+				<!-- <div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<center><h4 class="modal-title nav__name" id="myModalLabel" >PROTOKOL KESEHATAN</h4></center>
-				</div>
+				</div> -->
 
-					<div class="modal-body">
+					<div class="modal-body" style="background: #e8ecd7;">
+						<!-- <div class="row" > -->
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<!-- </div> -->
+						<br/>
 						<div class="row" >
 							<center>
 								<h4 class="nav__name">
 									Tanpa mengurangi rasa hormat dan demi mengurangi penyebaran pandemi covid, 
-									<br/>mohon untuk tetap mematuhi protokol kesehatan berikut.
+									<br/><br/>Mohon untuk tetap mematuhi protokol kesehatan berikut.
 								</h4>
 								<table>
 									<tr>
@@ -691,8 +814,8 @@
 											padding: 10px;
 											">
 												<center>
-													<h4 class="nav__name">Menghindari <br/>Jabat Tangan</h4>
-													<img src="images/002-handshake.png" style="height: 80px;"/>
+													<img src="images/mask.png" style="height: 80px;"/>
+													<h4 class="nav__name">Memakai<br/>Masker</h4>
 												</center>
 											</div>
 										</td>
@@ -701,20 +824,21 @@
 											padding: 10px;
 											">
 												<center>
-													<h4 class="nav__name">Mencuci Tangan</h4>
-													<img src="images/003-washing-hands.png" style="height: 80px;"/>
+													<img src="images/wash.png" style="height: 80px;"/>
+													<h4 class="nav__name">Mencuci<br/>Tangan</h4>
 												</center>
 											</div>
 										</td>
 									</tr>
 									<tr>
+										
 										<td>
 											<div style="
 											padding: 10px;
 											">
 												<center>
-													<h4 class="nav__name">Mengenakan Masker</h4>
-													<img src="images/004-medical-mask.png" style="height: 80px;"/>
+													<img src="images/handshake.png" style="height: 80px;"/>
+													<h4 class="nav__name">Menghindari <br/>Jabat Tangan</h4>
 												</center>
 											</div>
 										</td>
@@ -723,8 +847,8 @@
 											padding: 10px;
 											">
 												<center>
-													<h4 class="nav__name">Menjaga Jarak</h4>
-													<img src="images/005-distance.png" style="height: 80px;"/>
+													<img src="images/distance.png" style="height: 80px;"/>
+													<h4 class="nav__name">Tetap Menjaga<br/>Jarak</h4>
 												</center>
 											</div>
 										</td>
@@ -734,19 +858,49 @@
 						</div>
 					</div>
 
-				<div class="modal-footer">
+				<!-- <div class="modal-footer">
 					
 					<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
 
+
+	<div class="qbootstrap-hero" data-section="penutupguys">
+		<!-- <div class="qbootstrap-overlay"></div> -->
+		<div class="qbootstrap-cover text-center" style="background-image: url(images/background-aa.jpg);">
+			<div class="display-t">
+				<div class="display-tc">
+					<div class="container">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="animate-box svg-sm colored">
+								
+								<!-- <h1 class="holder"><span>Kepada Yth. Bapak/Ibu/Saudara/i:</span></h1> -->
+								
+								
+								<div class="col-md-12 ">
+									<div class="nav__name" style=" margin-top: 100px;word-wrap: break-word;
+									white-space:pre-wrap;">Merupakan suatu kehormatan dan kebahagiaan bagi kami,<br/>Apabila Bapak/Ibu/Saudara/Saudari berkenan untuk hadir dan memberikan doa restu.<br/>Atas kehadiran dan doa restunya kami mengucapkan terimakasih.
+									</div>
+									<h4 style="color: #614515;">Wassalamualaikum wr.wb</h4>
+									<div class="nav__name" style=" word-wrap: break-word;
+									white-space:pre-wrap;">Kami yang berbahagia<br/>Arifa & Odilio 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<footer id="footer" role="contentinfo">
 		<div class="container">
 			<div class="row row-bottom-padded-sm">
 				<div class="col-md-12">
-					<p class="copyright text-center">&copy; 2022 <a href="index.html">Invitee-project</a> </p>
+					<p class="copyright text-center">&copy; 2022 <a href="https://invitee-project.online/">Invitee-project</a> </p>
 				</div>
 			</div>
 			<!-- <div class="row">
@@ -782,20 +936,34 @@
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
+	<!--  -->
+	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 	
 	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-
 	<script>var loadDataPernikahan = function() {
+ 	// createjs.Sound.registerSound("sounds/BGTHEME.mp3", "x");
+		createjs.Sound.on("fileload", handleLoad);
+		createjs.Sound.registerSound("sounds/BGTHEME.mp3?"+"times=" + new Date().getTime(), "myID", 3);
+		function handleLoad(event) {
+			createjs.Sound.play("myID");
+			// store off AbstractSoundInstance for controlling
+			var myInstance = createjs.Sound.play("myID", {interrupt: createjs.Sound.INTERRUPT_ANY, loop:-1});
+		}
+
+		//this.audio1.paused = true; // pause     
+		//this.audio1.paused = false; // resume 
+
 
 		$('.namaPria').html('Odilio Arys H A, S.Kom');
 		$('.namaPriaPanggil').html('(Oudfrey)');
 		$('.namaWanita').html('Arifa Soliha');
 		$('.namaWanitaPanggil').html('(Arifa)');
-		$('.isianDescPria').html('Putra Bpk. Suharso, S.Pd & Ibu Yekti Sukmaningsih <br/> Karangtengah RT02/03, Kota Semarang');
-		$('.isianDescWanita').html('Putri Bpk. Achmad Solichin & Ibu Sarbiyatun <br/> Wujil Kolang kaling RT03/RW02, Bergas ,Kab.Semarang');
+		$('.isianDescPria').html('Putra Bpk. Suharso, S.Pd  <br/>& Ibu Yekti Sukmaningsih <br/> Karangtengah RT02/03 <br/>Semarang');
+		$('.isianDescWanita').html('Putri Bpk. Achmad Solichin  <br/>& Ibu Sarbiyatun <br/> Lingkungan Kolang kaling RT03/02 Wujil');
 		
 		$('.akadHari').html("Jum'at");
 		$('.akadTanggal').html('15 Juli 2022');
@@ -810,9 +978,39 @@
 		$('.resepsiDesc').html('Kediaman Mempelai Wanita <br/> (Wujil Kolang kaling RT03/RW02 ,Bergas,Kab.Semarang)');
 
 
+		
 	};
 	loadDataPernikahan();
 
+	$('#btnBukaUndangan').click(function(){
+		// $('#modalsProtokol').modal('show');
+		$('html, body').animate({
+			scrollTop: $('[data-section="home"]').offset().top
+		}, 500);
+		
+	// 	setTimeout(function () {
+    //     createjs.Sound.play("x");
+    // }, 100)
+	
+	});
+	
+	$('#mute_sound').click(function(){
+		$('#unmute_sound').show();
+		$('#mute_sound').hide();
+		createjs.Sound.setVolume(0);
+	});
+	$('#unmute_sound').click(function(){
+		
+		$('#mute_sound').show();
+		$('#unmute_sound').hide();
+	
+		// v = createjs.Sound.getVolume();
+        // if (v < 0.5) {
+            createjs.Sound.setVolume(1);
+        // } else {
+        //     createjs.Sound.setVolume(0);
+        // }
+	});
 	function SubForm (){
 
 		if($('#nama').val().trim().length==0){
