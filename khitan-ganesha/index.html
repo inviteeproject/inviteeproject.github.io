@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Invitee-project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="The Wedding of Arifa & Odilio" />
+	<meta name="keywords" content="Invitee-project web undangan digital nikah murah dan terbaik" />
+	<meta name="author" content="Invitee-project" />
+
+  
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="The Wedding of Arifa & Odilio"/>
+	<meta property="og:image" content="http://invitee-project.online/arifa-odi/images/title.PNG"/>
+	<meta property="og:url" content="invitee.online"/>
+	<meta property="og:site_name" content="The Wedding of Arifa & Odilio"/>
+	<meta property="og:description" content="The Wedding of Arifa & Odilio"/>
+	
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific popup  -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+		<style>
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    padding-top: 40px;
+}
+
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    border: 1px solid black;
+    background: rgb(41,41,41);
+    border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    height: 30px;
+    width: 8px;
+    border: 1px solid black;
+    background: rgb(111,111,111);
+    -webkit-box-shadow: 0 1px 1px rgb(0,0,0);
+    background: -webkit-linear-gradient(rgb(200,200,200), rgb(150,150,150));
+}
+
+::-webkit-scrollbar-track-piece {
+    height: 30px;
+    width: 30px;
+}
+
+.cust_count{
+	border: 2px solid #9ea282;
+	padding: 20px;
+	font-size: 30px;
+	background: #eeefe2;
+	border-radius: 10px !important;
+	margin: 5px;
+	color:#614515 !important;
+}					
+.containerJdl {
+  display: flex;
+  justify-content: center; /* center the child */
+}
+			.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+			.autocut{
+				-moz-hyphens:auto;
+				-ms-hyphens:auto;
+				-webkit-hyphens:auto;
+				hyphens:auto;
+				word-wrap:break-word;
+			}
+
+			/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section__height {
+  height: 100vh;
+}
+
+/*=============== LAYOUT ===============*/
+.container {
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--container-color);
+  z-index: var(--z-fixed);
+  transition: .4s;
+}
+
+/*=============== NAV ===============*/
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__img {
+  width: 32px;
+  border-radius: 50%;
+}
+
+.nav__logo {
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--container-color);
+    box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+    width: 100%;
+    height: 5rem;
+    padding: 0 1rem;
+    display: grid;
+    align-content: center;
+    border-radius: 1.25rem 1.25rem 0 0;
+    transition: .4s;
+  }
+}
+
+.nav__list, 
+.nav__link {
+  display: flex;
+}
+
+.nav__link {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+.nav__list {
+  justify-content: space-around;
+}
+
+.nav__name {
+  font-size: var(--tiny-font-size);
+  /* display: none;*/ /* Minimalist design, hidden labels */
+}
+
+.nav__icon {
+  font-size: 1.5rem;
+}
+
+/*Active link*/
+.active-link {
+  position: relative;
+  color: var(--first-color);
+  transition: .3s;
+}
+
+/* Minimalist design, active link */
+/* .active-link::before{
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  width: 4px;
+  height: 4px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+} */
+
+/* Change background header */
+.scroll-header {
+  box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+}
+
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+/* Remove if you choose, the minimalist design */
+@media screen and (max-width: 320px) {
+  .nav__name {
+    display: none;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .nav__list {
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 7rem 0 2rem;
+  }
+  .nav {
+    height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
+  }
+  .nav__img {
+    display: none;
+  }
+  .nav__icon {
+    display: none;
+  }
+  .nav__name {
+    font-size: var(--normal-font-size);
+    /* display: block; */ /* Minimalist design, visible labels */
+  }
+  .nav__link:hover {
+    color: var(--first-color);
+  }
+
+  /* First design, remove if you choose the minimalist design */
+  .active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    width: 4px;
+    height: 4px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+  }
+
+  /* Minimalist design */
+  /* .active-link::before{
+      bottom: -.75rem;
+  } */
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* .nav__menu{
+	background: #fff0 !important;
+  } */
+
+
+  .nav__menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--container-color);
+    box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+    width: 100%;
+    height: 5rem;
+    padding: 0 1rem;
+    display: grid;
+    align-content: center;
+    border-radius: 1.25rem 1.25rem 0 0;
+    transition: .4s;
+  }
+}
+
+.nav__item{
+	
+    font-size: 14px;
+
+}
+
+.nav__name{
+	font-family:"Source Sans Pro", Arial, sans-serif;
+}
+
+.txt-mayoriti{
+    color: #5f3e08 !important;
+}
+
+.card {
+	border-radius: 20px !important;
+}
+
+.card figure {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 0px;
+}
+
+.card figure:before {
+	z-index: 2;
+	-webkit-transition: .4s all ease;
+	-o-transition: .4s all ease;
+	transition: .4s all ease;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	position: absolute;
+	content: "";
+	left: 20px;
+	right: 20px;
+	top: 20px;
+	bottom: 20px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.card figure img {
+	-webkit-transition: .3s all ease;
+	-o-transition: .3s all ease;
+	transition: .3s all ease;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.card:hover figure:before {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.card:hover figure img {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+
+#timer div {
+	background-color: #fff;
+	color: #000;
+	width: 100px;
+	height: 105px;
+	border-radius: 5px;
+	font-size: 35px;
+	font-weight: 700;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#timer div span {
+	display: block;
+	margin-top: -2px;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+	#timer {
+		margin-top: -20px;
+	}
+
+	#timer div {
+		width: 65px;
+		height: 80px;
+		font-size: 16px;
+		margin-top: 20px;
+	}
+
+	#timer div span {
+		font-size: 14px;
+	}
+}
+
+.radius-0 {
+	border-radius: 0px;
+}
+
+.radius-5 {
+	border-radius: 5px;
+}
+
+.radius-10 {
+	border-radius: 10px;
+}
+
+.radius-20 {
+	border-radius: 20px;
+}
+		</style>
+	</head>
+	<body>
+
+		<!--=============== HEADER ===============-->
+        <header role="banner" class="header" id="qbootstrap-header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo" style="font-family: 'Pattaya';">Invitee</a>
+
+                <div class="nav__menu" id="nav-menu" style="background: #fff;">
+                    <ul class="nav__list" style="list-style: none;margin: 5px 1px 1px -25px;">
+                        <li class="nav__item">
+                            <a href="#"  class="nav__link active-link btnBukaUndangan">
+                                <!-- <i class='bx bx-home-alt nav__icon'></i> -->
+								<i class="icon-home"></i>
+                                <span class="nav__name">HOME</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#about" data-nav-section="dengan-rahmat" class="nav__link">
+                                <!-- <i class='bx bx-user nav__icon'></i> -->
+								<i class="icon-envelope"></i>
+                                <span class="nav__name">UNDANGAN</span>
+                            </a>
+                        </li>
+                      
+						<li class="nav__item">
+                            <a href="#about"  data-nav-section="when-where" class="nav__link">
+                                <!-- <i class='bx bx-user nav__icon'></i> -->
+								<i class="icon-map-marker"></i>
+                                <span class="nav__name">LOKASI</span>
+                            </a>
+                        </li>
+
+						
+						<li class="nav__item">
+                            <a href="#about"  data-nav-section="kado" class="nav__link">
+                                <!-- <i class='bx bx-user nav__icon'></i> -->
+								<i class="icon-gift"></i>
+                                <span class="nav__name">KADO</span>
+                            </a>
+                        </li>
+						
+						<li class="nav__item">
+                            <a href="#about"  data-nav-section="rsvp" class="nav__link">
+                                <!-- <i class='bx bx-user nav__icon'></i> -->
+								<i class="icon-envelope-square"></i>
+                                <span class="nav__name">UCAPAN</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <img src="assets/img/perfil.png" alt="" class="nav__img"> -->
+            </nav>
+        </header>
+
+	<header role="banner" id="qbootstrap-header" style="display: none;">
+		<div class="container">
+			<!-- <div class="row"> -->
+		    <nav class="navbar navbar-default">
+	        <div class="navbar-header">
+	        	<!-- Mobile Toggle Menu Button -->
+				<a href="#" class="js-qbootstrap-nav-toggle qbootstrap-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+	          	<a class="navbar-brand" href="index.html">Invitee-project</a> 
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav navbar-right">
+				
+	            <li><a href="#" data-nav-section="greetings"><span>GREETINGS</span></a></li>
+	            <li><a href="#" data-nav-section="dengan-rahmat"><span>MEMPELAI</span></a></li>
+				<li><a href="#" data-nav-section="when-where"><span>ACARA</span></a></li>
+				<li><a href="#" data-nav-section="rsvp"><span>UCAPAN</span></a></li>
+				<div style="display: none;">
+					<li id="btnHome"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+					<li><a href="#" data-nav-section="dengan-rahmat"><span>Mempelai</span></a></li>
+					<li><a href="#" data-nav-section="people"><span>People</span></a></li>
+					<li><a href="#" data-nav-section="when-where"><span>When &amp; Where</span></a></li>
+					<li><a href="#" data-nav-section="rsvp"><span>RSVP</span></a></li>
+					<li><a href="#" data-nav-section="gallery"><span>Gallery</span></a></li>
+					<li><a href="#" data-nav-section="blog"><span>Blog</span></a></li>
+				</div>
+	          </ul>
+	        </div>
+		    </nav>
+		  <!-- </div> -->
+	  </div>
+	</header>
+	
+	<div id="audio-container" style="position: fixed; 
+	top: 0px;
+    left: 0;
+	z-index: 4000;" class="audio-box">			
+		<p style="color: #f0f8ff00;">sond</p>
+		<!-- <div class="" id="unmute_sound" style="">
+			<div class="">
+			<i aria-hidden="true" class="fas fa-music"></i></div>
+		</div>  -->
+
+		<div id="unmute_sound" style="display: none;" class="btn btn-default btn-block">	
+			<i class="icon-volume-2"></i><br/>
+			<!-- <span class="nav__name">PLAY</span> -->
+		</div>
+		<div id="mute_sound" style="" class="btn btn-default btn-block">
+			<i class="icon-volume-off"></i><br/>
+			<!-- <span class="nav__name">MUTE</span> -->
+		</div>
+
+		<!-- <div class="" id="mute_sound" style="">
+			<div class="">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.36 70.52"><title>1Mute music</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path d="M74.12,58.49,70,55V4.49A4.49,4.49,0,0,0,64.22.2L21.07,13.5,13.48,7.06A3.5,3.5,0,1,0,9,12.4l8.21,7v34.4a15.67,15.67,0,0,0-8-.32c-.94.22-8,1.87-9,6.91A7.85,7.85,0,0,0,1.41,66c3.21,4.9,10.52,4.59,12.53,4.5s8-.35,11.25-4.82a10.18,10.18,0,0,0,1.61-3.38q-.15-15.76-.31-31.53a1.22,1.22,0,0,1,.89-1.19l1.34-.39L48.56,46a7.46,7.46,0,0,0-4.08,4.08c-1.08,2.94.15,6.32,1.93,8.35A10.55,10.55,0,0,0,52,61.48a16.35,16.35,0,0,0,12.06-1c.33-.17.65-.35,1-.54l4.55,3.86a3.5,3.5,0,1,0,4.53-5.34ZM60.87,44.92a18.14,18.14,0,0,0-3.34-.5L36.79,26.83,59.3,20.31a1.22,1.22,0,0,1,1.57,1.18Z"></path></g></g></svg>				</div>
+		</div> -->
+		
+	</div>
+
+	<div class="qbootstrap-hero" data-section="home">
+		<!-- <div class="qbootstrap-overlay"></div> -->
+		<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/background-aa.jpg);">
+			<div class="display-t">
+				<div class="display-tc">
+					<div class="container">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="animate-box svg-sm colored">
+								
+								<!-- <h1 class="holder"><span>Kepada Yth. Bapak/Ibu/Saudara/i:</span></h1> -->
+								<div class="txt-mayoriti" style=" word-wrap: break-word;
+								white-space:pre-wrap;">Kepada Bapak/Ibu/Saudara/i</div>
+								<h2 class="toUser txt-mayoriti"></h2>
+								
+								<div class="col-md-4 ">
+									
+								</div>
+								<div class="col-md-4 ">
+									Kami mengundang anda untuk hadir di acara syukuran khitanan anak kami
+
+									<!-- <div id="btnBukaUndangan" class="btn btn-default btn-block" >Buka Undangan</div> -->
+									<div >
+										<a id="btnBukaUndangan" class="btn btn-primary mt-3" data-nav-section="homea">Buka Undangan</a>
+									</div>
+								</div>
+								<div class="col-md-4 ">
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="qbootstrap-hero"  data-section="homea">
+		<!-- <div class="qbootstrap-overlay"></div> -->
+		<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/background-aa.jpg);">
+			<div class="display-t">
+				<div class="display-tc">
+					<div class="container">
+						<div class="pt-3">
+							
+							<div class="container text-center">
+								<div class="text-center py-5">
+								  <div class="mb-3">
+
+									<h2 class="mb-0 txt-mayoriti">Syukuran Khitanan</h2>
+
+									<img src="images/boy.png" class="img-fluid w-50 radius-20 mb-5" style="
+										height: 200px;
+									">
+									
+									<h1 class="mb-0 fonts txt-mayoriti aos-init aos-animate nama_anak" data-aos="fade-up"></h1>
+									<h5 class="mb-0 txt-mayoriti tgl_acara"> </h5>
+									
+									<center>
+
+										<table style=" border-spacing: 10px;
+										border-collapse: separate;">
+											<tr id="timer">
+												<td id="days" style="
+												text-align: center;
+												padding: 10px;
+												background: #fff;
+												border-radius: 5px;
+											">18</td>
+												<td id="hours" style="
+												text-align: center;
+												padding: 10px;
+												background: #fff;
+												border-radius: 5px;
+											">12</td>
+												<td id="minutes" style="
+												text-align: center;
+												padding: 10px;
+												background: #fff;
+												border-radius: 5px;
+											">12</td>
+												<td id="seconds" style="
+												text-align: center;
+												padding: 10px;
+												background: #fff;
+												border-radius: 5px;
+											">12</td>
+											</tr>
+										</table>
+									</center>
+
+									
+								  </div>
+								<!-- <small class="txt-mayoriti" >Untuk</small> -->
+								  <!-- <div class="text-white" fadeinup="" wow="">di Bandung</div> -->
+										<!-- <div >
+											<a id="btnBukaUndangan" class="btn btn-primary mt-3" data-nav-section="dengan-rahmat">Buka Undangan</a>
+										</div> -->
+									</div>
+							  </div>
+
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+	
+
+	<div id="qbootstrap-groom-bride"  data-section="dengan-rahmat" data-stellar-background-ratio="0.5" style="background-image: url(images/background-aab.jpg);">
+		<div class="container">
+
+			<div class="py-5 animate-box">
+				<div class="container">
+				  <div class="text-center">
+					<h3 class="txt-mayoriti">Assalamu'alaikum Wr Wb</h3>
+					<br/>
+					 Dengan Rahmat Allah yang Maha Kuasa Insha Allah kami akan melangsungkan Syukuran Khitanan putra kami
+					<!-- <h5 class="mb-0 text-white my-3" id="demo">1073d 10h 23m 40s </h5> -->
+				  </div>
+				  <br/>
+				  <div class="card hover text-center mt-4 p-3">
+					<div class="text-center">
+						<img src="images/boy.png" class="img-fluid w-50 rounded-circle" style="height: 200px;">
+					</div>
+					<h3 class="txt-mayoriti mt-4 nama_anak"></h3>
+					<p><i class="nama_anak_dari"></i></p>
+
+				  </div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	
+	
+	<div id="qbootstrap-when-where" data-section="when-where" >
+		<div class="container">
+
+			<div class="py-5" >
+				<div class="container">
+				  <div class="text-center" style="font-size: 15px;">
+					<h3 class="txt-mayoriti">Waktu dan Tempat</h3>
+					Bahagia rasanya apabila anda berkenan hadir dan memberikan doa di acara kami yang akan dilangsungkan pada :
+				  </div>
+				  <br/>
+				  <div class="p-4 card hover bg-white text-center radius-10 mt-4">
+					<hr class="my-4">
+					<h4 class="mb-0 txt-mayoriti "> Khitan </h4>
+					<p style="margin-bottom: -3px;
+				"> Sabtu, 18 Februari 2023</p>
+					<div class="mb-0 txt-mayoriti jam_acara"></div>
+					<div class="mt-4 alamat_acara"><i class="alamat_tempat"></i></div>
+					<hr>
+					<h4 class="mb-0 txt-mayoriti "> Syukuran </h4>
+					<p style="margin-bottom: -3px;
+				"> Sabtu, 18 Februari 2023</p>
+					<div class="mb-0 txt-mayoriti jam_acara"></div>
+					<div class="mt-4 alamat_acara"><i class="alamat_tempat"></i></div>
+				  </div>
+
+				</div>
+			</div>
+			  <br/>
+			  <br/>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<center><h4 class="mb-0 txt-mayoriti" >Lokasi</h4></center>
+					<div id="map" class="qbootstrap-map"></div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.6495050473264!2d110.41250882920038!3d-7.172378669065567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x236bd6028236020a!2zN8KwMTAnMjAuNiJTIDExMMKwMjQnNDcuMCJF!5e0!3m2!1sen!2sid!4v1650173855857!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="col-md-12">
+					
+					<center>
+						<h3>Scan Lokasi</h3><img src="images/wew.png">
+						<a href="https://goo.gl/maps/HHSd1A5ejVpGwJW49" class="btn btn-default btn-block">Klik Ke Lokasi</a>
+					</center>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div id="qbootstrap-when-where" data-section="rundown">
+		<div class="container">
+		  <div class="py-5" >
+			<div class="container">
+			  <div class="text-center">
+				<h2 class="txt-mayoriti">Rundown Acara</h2>
+				<div>
+				  Berikut Acara Rundown Acara kami.
+				</div>
+			  </div>
+			  
+			  <div class="card p-4 bg-white text-center radius-120 card-undangan mt-4">
+				<!-- <h4 class="mb-0 txt-mayoriti">Kegiatan 1  </h4> -->
+				<hr class="my-4">
+				<h4 class="mb-0 txt-mayoriti">Kegiatan 1  </h4>
+				07:00-08:00
+				<div class="mt-4">Deskripsi Kegiatan</div>
+			  </div>
+
+			  <div class="card p-4 bg-white text-center radius-120 card-undangan mt-4">
+				  <hr class="my-4">
+				  <h4 class="mb-0 txt-mayoriti">Kegiatan 1  </h4>
+				  07:00-08:00
+				  <div class="mt-4">Deskripsi Kegiatan</div>
+				</div>
+				
+				<div class="card p-4 bg-white text-center radius-120 card-undangan mt-4">
+				<hr class="my-4">
+				<h4 class="mb-0 txt-mayoriti">Kegiatan 1  </h4>
+				07:00-08:00
+				<div class="mt-4">Deskripsi Kegiatan</div>
+			  </div>
+
+			  <div class="card p-4 bg-white text-center radius-120 card-undangan mt-4">
+				<hr class="my-4">
+				<h4 class="mb-0 txt-mayoriti">Kegiatan 1  </h4>
+				07:00-08:00
+				<div class="mt-4">Deskripsi Kegiatan</div>
+			  </div>
+
+			  <div class="card p-4 bg-white text-center radius-120 card-undangan mt-4">
+				<hr class="my-4">
+				<h4 class="mb-0 txt-mayoriti">Kegiatan 1  </h4>
+				07:00-08:00
+				<div class="mt-4">Deskripsi Kegiatan</div>
+			  </div>
+
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+
+	<div id="qbootstrap-gallery" data-section="gallery">
+	<div class="container">
+		<div class="py-5" >
+		<div class="container">
+			<div class="text-center">
+				<h2 class="txt-mayoriti">Gallery</h2>
+
+			
+
+				
+
+				
+				
+			</div>
+			
+		</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="gallery animate-box">
+					<a class="gallery-img image-popup image-popup" href="images/background-A.jpg"><img src="images/background-A.jpg" class="img-responsive" alt="invitee"></a>
+				</div>
+				<div class="gallery animate-box">
+					<a class="gallery-img image-popup" href="images/background-1.jpg"><img src="images/background-1.jpg" class="img-responsive" alt="invitee"></a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="gallery animate-box">
+					<a class="gallery-img image-popup image-popup" href="images/background-111.jpg"><img src="images/background-111.jpg" class="img-responsive" alt="invitee"></a>
+				</div>
+				<div class="gallery animate-box">
+					<a class="gallery-img image-popup" href="images/background-11111.jpg"><img src="images/background-11111.jpg" class="img-responsive" alt="invitee"></a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<!-- <div class="gallery animate-box"> -->
+					
+					<!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/ggj2YHyvT0k?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+				<!-- </div> -->
+			</div>
+		</div>
+	</div>
+
+	</div>
+	
+	
+	<div id="qbootstrap-when-where" data-section="kado">
+		<div class="container">
+		  <div class="py-5" >
+			<div class="container">
+			  <div class="text-center">
+				<h2 class="txt-mayoriti">Kirim Kado</h2>
+			  </div>
+			  <div
+				class="p-4 bg-white text-center radius-20 card-undangan hover mt-4"
+			  >
+			  </div>
+			  <div class="text-center">
+
+				<p>~ <i class="nama_anak"></i> &amp; Family</p>
+				<p></p>
+			  </div>
+			  <div
+				class="p-4 bg-white text-center radius-10 card-undangan hover mt-4"
+			  >
+				<img
+				  src="images/bca.jpg"
+				  class="img-fluid w-100 radius-10"
+				  style="width: 100%;"
+				  alt=""
+				/>
+			  </div>
+			  <input type="text" value="123123123" id="myInput1" hidden="" />
+	  
+			  <div class="text-center">
+				<p class="text-center">Nomor Rekening : 123123123</p>
+				<button
+				  class="btn"
+				  style="
+					background-color: #ffb100;
+					border-radius: 20px;
+					color: #ffffff;
+				  "
+				  onclick="myFunction1()"
+				>
+				  <i class="fal fa-copy"></i> Copy Rekening
+				</button>
+			  </div>
+
+			  <div
+			  class="p-4 bg-white text-center radius-10 card-undangan hover mt-4"
+			>
+			  <img
+				src="images/bca.jpg"
+				class="img-fluid w-100 radius-10"
+				style="width: 100%;"
+				alt=""
+			  />
+			</div>
+			<input type="text" value="123123123" id="myInput1" hidden="" />
+	
+			<div class="text-center">
+			  <p class="text-center">Nomor Rekening : 123123123</p>
+			  <button
+				class="btn"
+				style="
+				  background-color: #ffb100;
+				  border-radius: 20px;
+				  color: #ffffff;
+				"
+				onclick="myFunction1()"
+			  >
+				<i class="fal fa-copy"></i> Copy Rekening
+			  </button>
+			</div>
+	  
+			  <script type="text/javascript">
+				function myFunction1() {
+				  // Get the text field
+				  var copyText1 = document.getElementById("myInput1");
+	  
+				  // Select the text field
+				  copyText1.select();
+				  copyText1.setSelectionRange(0, 99999); // For mobile devices
+	  
+				  // Copy the text inside the text field
+				  navigator.clipboard.writeText(copyText1.value);
+	  
+				  // Alert the copied text
+				  alert("Nomor Rekening Tersalin :" + copyText1.value);
+				}
+			  </script>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+
+	<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(images/background-aaa.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<h2 style="color: #fff !important;">Ucapan dan Doa</h2>
+						<div class="row">
+						<div class="col-md-10 col-md-offset-1 subtext">
+							<h3>Berikan ucapan ataupun doa yang ingin di sampaikan. </h3>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRsY-rvJLPcvdk0hvpFfD7D_u7VWuhw9r7Rg0Qpsad973uwQ/viewform?embedded=true" width="100%" height="788" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+
+					<!-- <div id="myForm" class="form-inline">
+						<div class="col-md-12 col-sm-12">
+							<div class="form-group">
+								<label for="name" class="sr-only">Nama</label>
+								<input type="text" class="form-control" data-key='name' id="nama" class='user-input' placeholder="Name">
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<div class="form-group">
+								<label for="pesan" class="sr-only">Pesan</label>
+								<textarea  class="form-control" id="pesan" data-key='Pesan'  class='user-input' placeholder="pesan"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<button  onclick='SubForm()' class="btn btn-default btn-block">Kirim</button>
+						</div>
+\
+						
+
+					</div> -->
+				</div>
+			</div>
+
+
+			
+		</div>
+	</div>
+
+	<div id="qbootstrap-testimonials" class="qbootstrap-greetings" data-section="greetingsss" data-stellar-background-ratio="0.5" style="background-image: url(images/background-aa.jpg);">
+		<div class="overlay"></div>	
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-12 section-heading text-center svg-sm colored">
+						<h2 class="" style="color: #fff !important;">Sweet Messages</h2>
+					</div>
+				</div>
+				<div class="row" style="
+				float: left;
+				width: 100%;
+				overflow-y: auto;
+				height: 500px;
+			">
+					<div id="pesanDoa" style="
+					margin-top: 35px;
+				"></div>
+					
+				</div>
+			</div>
+		</div>
+
+
+	
+
+	  
+	  
+	
+
+
+
+	
+	
+	
+
+	
+	<!-- Modal  -->
+	<div class="modal fade" id="modalsProtokol" tabindex="-1" role="dialog" aria-labelledby="myModal">
+
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<!-- <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<center><h4 class="modal-title nav__name" id="myModalLabel" >PROTOKOL KESEHATAN</h4></center>
+				</div> -->
+
+					<div class="modal-body" style="background: #e8ecd7;">
+						<!-- <div class="row" > -->
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<!-- </div> -->
+						<br/>
+						<div class="row" >
+							<center>
+								<h4 class="nav__name">
+									Tanpa mengurangi rasa hormat dan demi mengurangi penyebaran pandemi covid, 
+									<br/><br/>Mohon untuk tetap mematuhi protokol kesehatan berikut.
+								</h4>
+								<table>
+									<tr>
+										<td>
+											<div style="
+											padding: 10px;
+											">
+												<center>
+													<img src="images/mask.png" style="height: 80px;"/>
+													<h4 class="nav__name">Memakai<br/>Masker</h4>
+												</center>
+											</div>
+										</td>
+										<td>
+											<div style="
+											padding: 10px;
+											">
+												<center>
+													<img src="images/wash.png" style="height: 80px;"/>
+													<h4 class="nav__name">Mencuci<br/>Tangan</h4>
+												</center>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										
+										<td>
+											<div style="
+											padding: 10px;
+											">
+												<center>
+													<img src="images/handshake.png" style="height: 80px;"/>
+													<h4 class="nav__name">Menghindari <br/>Jabat Tangan</h4>
+												</center>
+											</div>
+										</td>
+										<td>
+											<div style="
+											padding: 10px;
+											">
+												<center>
+													<img src="images/distance.png" style="height: 80px;"/>
+													<h4 class="nav__name">Tetap Menjaga<br/>Jarak</h4>
+												</center>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</center>
+						</div>
+					</div>
+
+				<!-- <div class="modal-footer">
+					
+					<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+
+	<div class="qbootstrap-hero" data-section="penutupguys" style="display: none;">
+		<!-- <div class="qbootstrap-overlay"></div> -->
+		<div class="qbootstrap-cover text-center" style="background-image: url(images/background-aa.jpg);">
+			<div class="display-t">
+				<div class="display-tc">
+					<div class="container">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="animate-box svg-sm colored">
+								
+								<!-- <h1 class="holder"><span>Kepada Yth. Bapak/Ibu/Saudara/i:</span></h1> -->
+								<div class="row animate-box">
+									<div class="col-md-12 section-heading text-center svg-sm colored">
+										
+										
+										<h4 class="nav__name" style="margin-top: 90px;color:#614515 !important;">Hari Khitan</h4>
+										<h3 class="tgl_acara txt-mayoriti" style="color: #859042;"></h3>
+										
+									</div>
+								</div>
+
+								<div class="row animate-box">
+									<div class="col-md-8 col-md-offset-2 text-center">
+										
+										<center>
+										<table>
+											<tr>
+												<td  class="">
+													<p class="countdown cust_count txt-mayoriti">
+														<span id="days"></span>
+														
+													</p>
+													
+												</td>
+												<td class="">
+													<p class="countdown cust_count txt-mayoriti">
+														<span id="hours"></span>
+														
+													</p>
+												</td>
+												
+											</tr>
+											<tr>
+												<td class="">
+													<p class="countdown cust_count txt-mayoriti">
+														<span id="minutes" ></span>
+														
+													</p>
+													
+												</td>
+												<td class="">
+													<p class="countdown cust_count txt-mayoriti">
+														<span id="seconds" ></span>
+														
+													</p>
+												</td>
+											</tr>
+				
+											
+										</table>
+										</center>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12">
+					<p class="copyright text-center">&copy; 2022 <a href="https://invitee-project.online/">Invitee-project</a> </p>
+				</div>
+			</div>
+			<!-- <div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-youtube"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div> -->
+		</div>
+	</footer>
+	
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- YTPlayer -->
+	<script src="js/jquery.mb.YTPlayer.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!--  -->
+	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <!-- <script type="text/javascript" src="js/app.js"></script> -->
+	<script>var loadDataPernikahan = function() {
+ 	// createjs.Sound.registerSound("sounds/BGTHEME.mp3", "x");
+		createjs.Sound.on("fileload", handleLoad);
+		createjs.Sound.registerSound("sounds/BGTHEME.mp3?"+"times=" + new Date().getTime(), "myID", 3);
+		function handleLoad(event) {
+			createjs.Sound.play("myID");
+			// store off AbstractSoundInstance for controlling
+			var myInstance = createjs.Sound.play("myID", {interrupt: createjs.Sound.INTERRUPT_ANY, loop:-1});
+		}
+
+		//this.audio1.paused = true; // pause     
+		//this.audio1.paused = false; // resume 
+
+
+		$('.nama_anak').html('Ganesha Narayan');
+		$('.nama_anak_dari').html('Putra dari Adam dan Hawa');
+		$('.tgl_acara').html('Sabtu,18 Februari 2023 - Minggu, 19 Februari 2023');
+		$('.jam_acara').html('09:00 - 14:00 WIB');
+		$('.alamat_tempat').html('Jl. Pemuda No.150, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50132');
+		$('.desc_undangan').html('merupakan anak kedua kami. Usianya menginjak 11 tahun. Dan akan segera melaksanakan khitan. Maka dari itu, kami ingin mengadakan syukuran atas acara tersebut dengan tujuan memanjatkan rasa terima kasih kami kepada yang maha kuasa serta berharap bahwa anak kami kelak menjadi anak yang bermanfaat bagi dirinya, agama, dan bangsa Indonesia.');
+		
+
+		
+	};
+	loadDataPernikahan();
+
+	// $('#btnBukaUndangan').click(function(){
+	// 	// $('#modalsProtokol').modal('show');
+	// 	$('html, body').animate({
+	// 		scrollTop: $('[data-section="home"]').offset().top
+	// 	}, 500);
+		
+	// // 	setTimeout(function () {
+    // //     createjs.Sound.play("x");
+    // // }, 100)
+	
+	// });
+	
+	$('#mute_sound').click(function(){
+		$('#unmute_sound').show();
+		$('#mute_sound').hide();
+		createjs.Sound.setVolume(0);
+	});
+	$('#unmute_sound').click(function(){
+		
+		$('#mute_sound').show();
+		$('#unmute_sound').hide();
+	
+		// v = createjs.Sound.getVolume();
+        // if (v < 0.5) {
+            createjs.Sound.setVolume(1);
+        // } else {
+        //     createjs.Sound.setVolume(0);
+        // }
+	});
+	function SubForm (){
+
+		if($('#nama').val().trim().length==0){
+			return alert('Nama Tidak boleh kosong!');
+		}
+
+		if($('textarea#pesan').val().trim().length==0){
+			return alert('Pesan Tidak boleh kosong!');
+		}
+
+		// let newUser = {};
+		// const usersRef = dbRef.child('users');
+		// newUser={name: ''+$('#nama').val(), pesan: ''+$('textarea#pesan').val()};
+		// usersRef.push(newUser, function () {
+		// 	console.log("data has been inserted");
+		// 	alert("Terimakasih :)");
+		// 	getPesan();
+		// 	$('#nama').val('');
+		// 	$('textarea#pesan').val('');
+
+		// 	$('html, body').animate({
+		// 	scrollTop: $('[data-section="greetingsss"]').offset().top
+		// }, 500);
+		// })
+		
+	}
+
+	getPesan();	
+
+	function getPesan(){
+
+		$('#pesanDoa').html('');
+		var pesanHtml='';
+
+
+		$.get('https://script.googleusercontent.com/macros/echo?user_content_key=8AThtOxwEabjGJ7VEP5HhU3snrd-JwpRzQyTmwWb9ZY8yc4HOHU2VFIrJ_EFTB5KF-xhoTK8q4ag7YUDFZVtUm8jOTtUIMzTm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnGTQBbcac_eoyVpvdnGLjmvvtsMp_jdqNJa9l_KaVWI5QMYAFLiJQQ0icl3viqPGEruQbx-chgnkGhkt_PGLveZR1Z0_3aHmzA&lib=MFqTXvQp-2gqZDGgWoJxtQDqEJhr8EbsL', {}, 
+            function(datas) {
+				var data=datas.GoogleSheetData;
+                if(data.length>0){
+                   console.log(data);
+
+				   for (let i = 0; i < data.length; i++) {
+					var s=0;
+					console.log('sini');
+
+						if (i!=0){
+							console.log('Cetak');
+							pesanHtml+='<div class="col-md-4 animate-box fadeInUp animated">';
+							pesanHtml+='<div class="box-testimony " style="width: 100%;">';
+							pesanHtml+='<blockquote>';
+							pesanHtml+='<span class="quote"><span><i class="icon-quote-left"></i></span></span>';
+							pesanHtml+='<p class="autocut">&ldquo;'+data[i][3]+'</p>';
+							pesanHtml+='</blockquote>';
+							pesanHtml+='<p class="author">'+data[i][2]+'</p>';
+							pesanHtml+='</div>';
+							pesanHtml+='</div>';
+							s++;
+						}
+					}
+				   
+
+				   $('#pesanDoa').html(''+pesanHtml);
+                }
+                
+              
+        }); 
+
+		
+		// const usersRef = dbRef.child('users');
+		// usersRef.on("child_added", snap => {
+		// 	let user = snap.val();
+		// 	console.log(user);
+		// 	pesanHtml+='<div class="col-md-4 animate-box fadeInUp animated">';
+		// 	pesanHtml+='<div class="box-testimony " style="width: 100%;">';
+		// 	pesanHtml+='<blockquote>';
+		// 	pesanHtml+='<span class="quote"><span><i class="icon-quote-left"></i></span></span>';
+		// 	pesanHtml+='<p class="autocut">&ldquo;'+user.pesan+'</p>';
+		// 	pesanHtml+='</blockquote>';
+		// 	pesanHtml+='<p class="author">'+user.name+'</p>';
+		// 	pesanHtml+='</div>';
+		// 	pesanHtml+='</div>';
+
+		// 	$('#pesanDoa').html(''+pesanHtml);
+		// });
+	}
+	
+	// $(".T2dutf").hide();
+	// $(".xpWfed").hide();
+	</script>
+
+	</body>
+</html>
