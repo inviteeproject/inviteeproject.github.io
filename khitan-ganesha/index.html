@@ -746,13 +746,13 @@
 				<div class="col-md-12">
 					<center><h4 class="mb-0 txt-mayoriti" >Lokasi</h4></center>
 					<div id="map" class="qbootstrap-map"></div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.6495050473264!2d110.41250882920038!3d-7.172378669065567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x236bd6028236020a!2zN8KwMTAnMjAuNiJTIDExMMKwMjQnNDcuMCJF!5e0!3m2!1sen!2sid!4v1650173855857!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.3335160926786!2d110.44255161496395!3d-6.9699234949646875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTgnMTEuNyJTIDExMMKwMjYnNDEuMSJF!5e0!3m2!1sen!2sid!4v1674997432308!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 				<div class="col-md-12">
 					
 					<center>
-						<h3>Scan Lokasi</h3><img src="images/wew.png">
-						<a href="https://goo.gl/maps/HHSd1A5ejVpGwJW49" class="btn btn-default btn-block">Klik Ke Lokasi</a>
+						<h3>Scan Lokasi</h3><img src="images/wew.png" width="100%">
+						<a href="https://goo.gl/maps/oRfm3ry7D1Nc6VXb8" class="btn btn-default btn-block">Klik Ke Lokasi</a>
 					</center>
 				</div>
 			</div>
@@ -857,6 +857,15 @@
 						<a class="gallery-img image-popup" href="images/IMG_2.jpeg"><img src="images/IMG_2.jpeg" class="img-responsive" alt="invitee"></a>
 					</div>
 				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup image-popup" href="images/IMG_3.jpeg"><img src="images/IMG_3.jpeg" class="img-responsive" alt="invitee"></a>
+					</div>
+					
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/IMG_4.jpeg"><img src="images/IMG_4.jpeg" class="img-responsive" alt="invitee"></a>
+					</div>
+				</div>
 				<!-- <div class="col-md-3 col-sm-6">
 				
 					
@@ -901,16 +910,17 @@
 				class="p-4 bg-white text-center radius-10 card-undangan hover mt-4"
 			  >
 				<img
-				  src="images/bca.jpg"
+				  
+				  src="images/bj.png"
 				  class="img-fluid w-100 radius-10"
 				  style="width: 100%;"
 				  alt=""
 				/>
 			  </div>
-			  <input type="text" value="123123123" id="myInput1" hidden="" />
+			  <input type="text" value="2099187533" id="myInputBJ" hidden="" />
 	  
 			  <div class="text-center">
-				<p class="text-center">Nomor Rekening : 123123123</p>
+				<p class="text-center">Nomor Rekening : 2099187533</p>
 				<button
 				  class="btn"
 				  style="
@@ -918,7 +928,7 @@
 					border-radius: 20px;
 					color: #ffffff;
 				  "
-				  onclick="myFunction1()"
+				  onclick="myFunctionBJ()"
 				>
 				  <i class="fal fa-copy"></i> Copy Rekening
 				</button>
@@ -928,16 +938,16 @@
 			  class="p-4 bg-white text-center radius-10 card-undangan hover mt-4"
 			>
 			  <img
-				src="images/bca.jpg"
+			  src="images/bca.jpg"
 				class="img-fluid w-100 radius-10"
-				style="width: 100%;"
+				style="width: 100%;margin-top: 10px;"
 				alt=""
 			  />
 			</div>
-			<input type="text" value="123123123" id="myInput1" hidden="" />
+			<input type="text" value="4620779691" id="myInput1" hidden="" />
 	
 			<div class="text-center">
-			  <p class="text-center">Nomor Rekening : 123123123</p>
+			  <p class="text-center">Nomor Rekening : 4620779691</p>
 			  <button
 				class="btn"
 				style="
@@ -952,6 +962,21 @@
 			</div>
 	  
 			  <script type="text/javascript">
+				function myFunctionBJ() {
+				  // Get the text field
+				  var copyText1 = document.getElementById("myInputBJ");
+	  
+				  // Select the text field
+				  copyText1.select();
+				  copyText1.setSelectionRange(0, 99999); // For mobile devices
+	  
+				  // Copy the text inside the text field
+				  navigator.clipboard.writeText(copyText1.value);
+	  
+				  // Alert the copied text
+				  alert("Nomor Rekening Tersalin :" + copyText1.value);
+				}
+				
 				function myFunction1() {
 				  // Get the text field
 				  var copyText1 = document.getElementById("myInput1");
